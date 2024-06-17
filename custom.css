@@ -10,3 +10,7 @@
 .lp-arrow.t-bg svg circle::hover, .lp-arrow.t-bg svg path::hover {
     stroke: #000;
 }
+.cta:hover {
+    color: var(--indigo);
+    background-color: rgba(0, 0, 0, 0);
+}
