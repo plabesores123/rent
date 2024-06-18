@@ -4,10 +4,10 @@
     appearance: none;
     background-color: var(--indigo-200)!important;
 }
-.lp-arrow.t-bg svg::hover {
+.lp-arrow.t-bg::hover svg{
     fill: #4561ec;
 }
-.lp-arrow.t-bg svg circle::hover, .lp-arrow.t-bg svg path::hover {
+.lp-arrow.t-bg::hover  svg circle, .lp-arrow.t-bg::hover svg path {
     stroke: #000;
 }
 .cta:hover {
