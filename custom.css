@@ -8,11 +8,11 @@
     fill: #4561ec;
 }
 .lp-arrow.t-bg::hover svg circle, .lp-arrow.t-bg::hover svg path {
-    stroke: #000;
+    stroke: #000!important;
 }
 .cta:hover {
-    color: var(--indigo);
-    background-color: rgba(0, 0, 0, 0);
+    color: var(--indigo)!important;
+    background-color: rgba(0, 0, 0, 0)!important;
 }
 .line-white.indigo-light-bg {
     opacity: 1;
