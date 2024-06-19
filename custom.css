@@ -18,6 +18,9 @@
     opacity: 1;
     visibility: visible;
 }
+.gs-container.cta-block {
+    visibility: visible;
+}
 @media screen and (max-width: 767px)
     .contact-form-wrap {
         position: relative;
