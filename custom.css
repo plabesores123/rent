@@ -18,3 +18,7 @@
     opacity: 1;
     visibility: visible;
 }
+.contact-form-wrap {
+    position: relative;
+    width: 100%;
+}
