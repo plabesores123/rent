@@ -18,7 +18,10 @@
     opacity: 1;
     visibility: visible;
 }
-.contact-form-wrap {
-    position: relative;
-    width: 100%;
+@media screen and (max-width: 767px)
+    .contact-form-wrap {
+        position: relative;
+        width: 100%;
+    }
+    
 }
