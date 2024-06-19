@@ -26,5 +26,8 @@
         position: relative;
         width: 100%;
     }
-    
+    .get-started-form-slider.form-slider-mobile {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
