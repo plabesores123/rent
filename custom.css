@@ -85,7 +85,7 @@
         overflow-x: hidden;
         overflow-y: auto;
     }
-.ui-selectmenu-button.ui-button {
-    width: 100%;
-}
+   .ui-selectmenu-button.ui-button {
+        width: 100%!important;
+   }
 }
