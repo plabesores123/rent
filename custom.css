@@ -107,6 +107,12 @@
   border-radius: 26px;
   width:4px;
 }
+
+.ui-menu::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
