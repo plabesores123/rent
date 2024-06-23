@@ -42,6 +42,20 @@
     font-size: 16px!important;
 }
 
+.ui-selectmenu-button.ui-button {
+    width: 237px !important;
+}
+.ui-selectmenu-button {
+    background-color: var(--indigo-200) !important;
+    background-image: none!important;
+    border: 0!important;;
+    border-radius: 56px!important;
+    padding: 8px 15px!important;
+    font-weight: 600!important;
+    font-family: 'Inter'!important;
+    font-size: 16px!important;
+}
+
 .ui-state-default .ui-icon.custom-button, .ui-icon.custom-button, .ui-button .ui-icon.custom-button {
     background-image: url('https://plabesores123.github.io/rent/images/down-arrow.svg');
     margin-top: 4px!important;
@@ -72,10 +86,26 @@
     padding-bottom: 1px!important;
     max-height: 300px!important;
     border-radius: 0px 0px 20px 20px!important;
-	background-color: var(--indigo-200) !important;
+    background-color: var(--indigo-200) !important;
 }
-.ui-selectmenu-button.ui-button {
-    width: 237px !important;
+@media screen and (max-width: 767px)
+   .ui-selectmenu-button.ui-button {
+        width: 100%!important!important;
+   }
+}
+select::-webkit-scrollbar {
+  width: 14px!important;
+  height: 14px!important;
+}
+
+select::-webkit-scrollbar-track {
+  border: rgb(180, 180, 180)!important;
+  background-color: #ff6536!important;
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: var(--indigo-500) !important;
+  border: 1px solid rgb(193, 193, 193)!important;
 }
 @media screen and (max-width: 767px)
     .contact-form-wrap {
