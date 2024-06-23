@@ -99,6 +99,7 @@
   border: var(--indigo-100) 3px solid !important;
   background-color: var(--indigo-100)!important;
   border-radius: 26px;
+  margin-block: 15px;
 }
 
 .ui-menu::-webkit-scrollbar-thumb {
