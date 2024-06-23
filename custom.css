@@ -65,7 +65,7 @@
     border: 0 !important;
     background: var(--indigo-200) !important;
     font-weight: 600!important;
-    color: var(--gray-600);
+    color: var(--gray-600)!important;
 }
 .ui-button:focus {
     font-weight: 600!important;;
