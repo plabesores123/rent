@@ -92,14 +92,12 @@
 .ui-menu::-webkit-scrollbar {
   width: 10px!important;
   height: 10px!important;
-  margin-right:5px;
+  border-right: 10px solid var(--indigo-200) !important;
 }
 
 .ui-menu::-webkit-scrollbar-track {
-  border-right: 10px solid var(--indigo-200) !important;
   background-color: var(--indigo-100)!important;
   border-radius: 26px;
-  margin-block: 15px;
 }
 
 .ui-menu::-webkit-scrollbar-thumb {
