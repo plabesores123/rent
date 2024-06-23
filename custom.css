@@ -96,13 +96,13 @@
 }
 
 .ui-menu::-webkit-scrollbar-track {
-  border: var(--indigo-100) 3px solid !important;
   background-color: var(--indigo-100)!important;
   border-radius: 26px;
   margin-block: 15px;
 }
 
 .ui-menu::-webkit-scrollbar-thumb {
+  border: var(--indigo-100) 3px solid !important;
   background-color: var(--indigo-500) !important;
   border-radius: 26px;
   width:4px;
