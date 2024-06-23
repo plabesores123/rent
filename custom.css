@@ -90,13 +90,13 @@
     background-color: var(--indigo-200) !important;
 }
 .ui-menu::-webkit-scrollbar {
-  width: 14px!important;
-  height: 14px!important;
+  width: 10px!important;
+  height: 10px!important;
 }
 
 .ui-menu::-webkit-scrollbar-track {
   border: rgb(180, 180, 180)!important;
-  background-color: #ff6536!important;
+  background-color: var(--indigo-100)!important;
 }
 
 .ui-menu::-webkit-scrollbar-thumb {
