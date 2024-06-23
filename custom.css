@@ -92,6 +92,7 @@
 .ui-menu::-webkit-scrollbar {
   width: 4px!important;
   height: 4px!important;
+  margin-right:5px;
 }
 
 .ui-menu::-webkit-scrollbar-track {
