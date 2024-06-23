@@ -96,6 +96,7 @@
 }
 
 .ui-menu::-webkit-scrollbar-track {
+  border-right: 10px solid var(--indigo-200) !important;
   background-color: var(--indigo-100)!important;
   border-radius: 26px;
   margin-block: 15px;
