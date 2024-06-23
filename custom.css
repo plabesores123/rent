@@ -89,17 +89,17 @@
     border-radius: 0px 0px 20px 20px!important;
     background-color: var(--indigo-200) !important;
 }
-select::-webkit-scrollbar {
+.ui-menu::-webkit-scrollbar {
   width: 14px!important;
   height: 14px!important;
 }
 
-select::-webkit-scrollbar-track {
+.ui-menu::-webkit-scrollbar-track {
   border: rgb(180, 180, 180)!important;
   background-color: #ff6536!important;
 }
 
-select::-webkit-scrollbar-thumb {
+.ui-menu::-webkit-scrollbar-thumb {
   background-color: var(--indigo-500) !important;
   border: 1px solid rgb(193, 193, 193)!important;
 }
