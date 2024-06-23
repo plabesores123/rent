@@ -61,10 +61,11 @@
     margin-top: 4px!important;
 }
 
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus, .ui-button:active {
     border: 0 !important;
     background: var(--indigo-200) !important;
     font-weight: 600!important;
+    color: var(--gray-600);
 }
 .ui-button:focus {
     font-weight: 600!important;;
