@@ -90,8 +90,8 @@
     background-color: var(--indigo-200) !important;
 }
 .ui-menu::-webkit-scrollbar {
-  width: 4px!important;
-  height: 4px!important;
+  width: 10px!important;
+  height: 10px!important;
   margin-right:5px;
 }
 
@@ -104,6 +104,7 @@
 .ui-menu::-webkit-scrollbar-thumb {
   background-color: var(--indigo-500) !important;
   border-radius: 26px;
+  width:4px;
 }
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
