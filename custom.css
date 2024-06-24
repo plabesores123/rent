@@ -138,6 +138,10 @@
     font-family: Rentsans, sans-serif;
 }
 
+#is-related .collection-list-resource:not(:nth-child(-n+3)) {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
