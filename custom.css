@@ -125,7 +125,7 @@
     stroke: var(--indigo)!important;
 }
 
-.form-cta, .cta {
+.form-cta, .cta, .CTA {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
