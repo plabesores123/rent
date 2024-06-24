@@ -121,6 +121,10 @@
     stroke: var(--indigo)!important;
 }
 
+.load-more-button:hover .arrow-page-left svg path {
+    stroke: var(--indigo)!important;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
