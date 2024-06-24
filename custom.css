@@ -134,6 +134,10 @@
     margin-top: 50px;
 }
 
+.blog-details h1, .blog-details h2, .blog-details h3, .blog-details h4, .blog-details h5{
+    font-family: Rentsans, sans-serif;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
