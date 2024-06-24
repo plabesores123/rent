@@ -113,6 +113,15 @@
     margin-bottom: 10px; 
 }
 
+.load-more-button:hover .arrow-page-right{
+    padding-right: 15px;
+    transform: translate(0);
+}
+
+.load-more-button:hover .arrow-page-right svg path, {
+    stroke: var(--indigo)!important;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
