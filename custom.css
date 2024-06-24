@@ -125,6 +125,11 @@
     stroke: var(--indigo)!important;
 }
 
+.form-cta, .cta {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
