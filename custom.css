@@ -118,7 +118,7 @@
     transform: translate(0);
 }
 
-.load-more-button:hover .arrow-page-right svg path, {
+.load-more-button:hover .arrow-page-right svg path {
     stroke: var(--indigo)!important;
 }
 
