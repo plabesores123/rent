@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function() {
     var $carousel = $('.ar-carousel.is-feature');
 
@@ -39,4 +38,3 @@ $(document).ready(function() {
         console.log('Condition not met: data-ar attribute is not blog or page name is not All resources landing');
     }
 });
-</script>
