@@ -34,17 +34,11 @@ $(document).ready(function() {
         var $blogFeature = $('.blog-feature.resource-type-page');
 
         if ($blogFeature.length > 0 && getPageName() === 'Blog') {
-            console.log('Handling Blog Type Page');
     
             var $b_title = $blogFeature.find('._40px-rent-black');
             var $b_date = $blogFeature.find('.date-categories > div:first-child');
             var $b_cat = $blogFeature.find('.date-categories > div:last-child');
             
-            // Log to check if selectors are correct
-            console.log('$b_title:', $b_title.length);
-            console.log('$b_date:', $b_date.length);
-            console.log('$b_cat:', $b_cat.length);
-    
             // Set attribute for .cta element
             var clickSubTypeValue = $b_title.text().trim() + ' | ' + $b_date.text().trim() + ' | ' + $b_cat.text().trim();
             $(".blog-feature.resource-type-page .cta").attr("data-click_sub_type", clickSubTypeValue);
