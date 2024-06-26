@@ -35,10 +35,19 @@ $(document).ready(function() {
 
         if ($blogFeature.length > 0 && getPageName() === 'Blog') {
             // Perform actions specific to this page
+            console.log('Handling Blog Type Page');
+
             var $b_title = $('.blog-feature.resource-type-page ._40px-rent-black');
             var $b_date = $('.blog-feature.resource-type-page .date-categories > div:first-child');
             var $b_cat = $('.blog-feature.resource-type-page .date-categories > div:last-child');
-            $(".blog-feature.resource-type-page .cta").attr("data-click_sub_type", "$b_title | $b_date | $b_cat");
+            
+            // Log to check if selectors are correct
+            console.log('$b_title:', $b_title.length);
+            console.log('$b_date:', $b_date.length);
+            console.log('$b_cat:', $b_cat.length);
+
+            // Set attribute for .cta element
+            $(".blog-feature.resource-type-page .cta").attr("data-click_sub_type", $b_title.text() + ' | ' + $b_date.text() + ' | ' + $b_cat.text());
         }
     }
 
