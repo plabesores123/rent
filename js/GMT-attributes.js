@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log('External script loaded');
     var $carousel = $('.ar-carousel.is-feature');
 
     // Function to get the page name
