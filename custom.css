@@ -138,6 +138,10 @@
     font-family: Rentsans, sans-serif;
 }
 
+.blog-details .blog-content img {
+    padding-bottom: 32px;
+}
+
 #is-related .collection-list-resource:not(:nth-child(-n+3)) {
     display: none;
 }
