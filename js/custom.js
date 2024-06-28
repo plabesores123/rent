@@ -17,15 +17,21 @@ $(document).ready(function() {
         });
     }
     
-   function GetStartedClose() {
-        $("section").off('click').on('click', function() {
-            if($('.get-started-form-slider').css('display') == 'block') {
-                $(".close-wrapper").click(); 
-            }
-        });
+    // Function to handle the section click event
+    function handleSectionClick() {
+        console.log("Section clicked");
+        if ($('.get-started-form-slider').css('display') == 'block') {
+            console.log("Form slider is displayed, triggering close.");
+            $(".close-wrapper").click();
+        } else {
+            console.log("Form slider is not displayed.");
+        }
     }
+
+    // Attach the click event handler to sections once
+    $("section").on('click', handleSectionClick);
     
     removenbsp();
     productsGetStarted();
-    GetStartedClose();
+    //GetStartedClose();
 });
