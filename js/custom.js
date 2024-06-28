@@ -20,7 +20,7 @@ $(document).ready(function() {
     function GetStartedClose() {
         if($('.get-started-form-slider').css('display') == 'block')
         {
-            $("body").click(function() {
+            $("section").click(function() {
                 $(".close-wrapper").click(); 
             });
         }  
