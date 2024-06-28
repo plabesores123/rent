@@ -17,13 +17,12 @@ $(document).ready(function() {
         });
     }
     
-    function GetStartedClose() {
-        if($('.get-started-form-slider').css('display') == 'block')
-        {
-            $("section").click(function() {
+   function GetStartedClose() {
+        $("section").off('click').on('click', function() {
+            if($('.get-started-form-slider').css('display') == 'block') {
                 $(".close-wrapper").click(); 
-            });
-        }  
+            }
+        });
     }
     
     removenbsp();
