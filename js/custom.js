@@ -18,9 +18,12 @@ $(document).ready(function() {
     }
     
     function GetStartedClose() {
-        $("body").click(function() {
-            $(".close-wrapper").click(); 
-        });
+        if($('.get-started-form-slider').css('display') == 'block')
+        {
+            $("body").click(function() {
+                $(".close-wrapper").click(); 
+            });
+        }  
     }
     
     removenbsp();
