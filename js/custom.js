@@ -16,11 +16,13 @@ $(document).ready(function() {
             $(".get-started-form-slider").fadeTo(300, 1);
         });
     }
+    
     function GetStartedClose() {
         $(".body").click(function() {
             $(".close-wrapper").click(); 
         });
     }
+    
     removenbsp();
     productsGetStarted();
     GetStartedClose();
