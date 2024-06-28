@@ -19,18 +19,20 @@ $(document).ready(function() {
     
     // Function to handle the section click event
     function handleSectionClick() {
-        console.log("Section clicked");
         if ($('.get-started-form-slider').css('display') == 'block') {
-            console.log("Form slider is displayed, triggering close.");
+            // Unbind the section click event to prevent recursion
+            $("section").off('click', handleSectionClick);
+            // Trigger the close action
             $(".close-wrapper").click();
-        } else {
-            console.log("Form slider is not displayed.");
+            // Rebind the section click event
+            setTimeout(function() {
+                $("section").on('click', handleSectionClick);
+            }, 0);
         }
     }
 
     // Attach the click event handler to sections once
     $("section").on('click', handleSectionClick);
-    
     removenbsp();
     productsGetStarted();
     //GetStartedClose();
