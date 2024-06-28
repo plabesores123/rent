@@ -1,6 +1,17 @@
-$('#remove-nbsp').html(function(i,h){
-    return h.replace(/&nbsp;/g,' ');
-});
+$(document).ready(function() {
+    // Function to get the page name
+    function getPageName() {
+        return $('title').text().trim(); // Assuming the page name is the document title
+    }
+
+    // Function for page 'All resources landing'
+    function handleAllResourcesPage() {
+        
+        $('#remove-nbsp').html(function(i,h){
+            return h.replace(/&nbsp;/g,' ');
+        });
+    }
+        
 $(".lp-cta").click(function() {
     $(".get-started-form-slider").css({
     "display" : "block",
