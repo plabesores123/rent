@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
     
     function GetStartedClose() {
-        $(".body").click(function() {
+        $("body").click(function() {
             $(".close-wrapper").click(); 
         });
     }
