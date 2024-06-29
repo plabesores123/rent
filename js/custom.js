@@ -17,22 +17,18 @@ $(document).ready(function() {
         });
     }
     
-    // Function to handle the section click event
-    function handleSectionClick() {
-        if ($('.get-started-form-slider').css('display') == 'block') {
-            // Unbind the section click event to prevent recursion
-            $("section").off('click', handleSectionClick);
-            // Trigger the close action
+   // Function to handle the section click event
+    function handleSectionClick(event) {
+        // Check if the click is outside the form slider
+        if ($('.get-started-form-slider').css('display') === 'block' && !$(event.target).closest('.get-started-form-slider').length) {
+            console.log("Clicked outside the form slider, triggering close.");
             $(".close-wrapper").click();
-            // Rebind the section click event
-            setTimeout(function() {
-                $("section").on('click', handleSectionClick);
-            }, 0);
         }
     }
 
     // Attach the click event handler to sections once
     $("section").on('click', handleSectionClick);
+
     removenbsp();
     productsGetStarted();
     //GetStartedClose();
