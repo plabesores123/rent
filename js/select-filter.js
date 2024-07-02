@@ -2,17 +2,23 @@ $(function() {
     
     $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" }, create: function(event, ui) {
                    var selectmenuButton = $(this).selectmenu("widget");
-                   var clearButton = $('<button>', {
+                   var selectmenuMenu = $("#" + selectmenuButton.attr("aria-owns"));
+
+                   // Create the clear button
+                   var clearButton = $('<li>', {
+                       class: 'ui-menu-item',
+                       role: 'presentation'
+                   }).append($('<div>', {
+                       class: 'ui-menu-item-wrapper',
                        text: 'Clear Selection',
-                       class: 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only',
                        click: function() {
                            // Clear the selection
-                           $("#Cat-Select-3").val('').selectmenu("refresh");
+                           $("#mySelectmenu").val('').selectmenu("refresh");
                        }
-                   });
+                   }));
 
-                   // Append the clear button to the selectmenu widget
-                   selectmenuButton.after(clearButton);
+                   // Append the clear button to the menu
+                   selectmenuMenu.append(clearButton);
                }
  }); 
     
