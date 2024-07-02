@@ -18,18 +18,13 @@ $(document).ready(function() {
     }
     
    // Function to handle the section click event
-    function handleSectionClick(event) {
-        // Check if the click is outside the form slider
-        if ($('.get-started-form-slider').css('display') === 'block' && !$(event.target).closest('.get-started-form-slider').length) {
-            console.log("Clicked outside the form slider, triggering close.");
-            $(".close-wrapper").click();
-        }
+    function filterLoseFocus() {
+       $(".select-style").change(function() {
+           $(".ui-button").trigger('blur');
+       });
     }
-
-    // Attach the click event handler to sections once
-    $("section").on('click', handleSectionClick);
 
     removenbsp();
     productsGetStarted();
-    //GetStartedClose();
+    filterLoseFocus();
 });
