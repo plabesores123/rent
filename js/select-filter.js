@@ -1,5 +1,4 @@
 $(function() {
-    //$("#Cat-Select-3").selectmenu(); 
     
     $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" } }); 
     
@@ -18,6 +17,9 @@ $(function() {
     $authorselect = $('#Author-Select-2');
     $authorselect2 = $('#Author-Select');
     $authorselect.unbind('mouseenter mouseleave'); 
+
+    var buttonCat = $catselect;
+    $('<button type="button" class="btn btn-sm btn-light">Clear filter</button>').appendTo(button); 
   
     $catselect.on('selectmenuchange', function() {
         var selectedValue = $catselect.val();
