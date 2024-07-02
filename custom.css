@@ -34,7 +34,7 @@
     background-color: var(--indigo-200) !important;
     background-image: none!important;
     border: 0!important;;
-    border-radius: 56px!important;
+    border-radius: 56px;
     padding: 8px 15px!important;
     font-weight: 600!important;
     font-family: 'Inter'!important;
@@ -48,7 +48,7 @@
     background-color: var(--indigo-200) !important;
     background-image: none!important;
     border: 0!important;;
-    border-radius: 56px!important;
+    border-radius: 56px;
     padding: 8px 15px!important;
     font-weight: 600!important;
     font-family: 'Inter'!important;
@@ -77,7 +77,7 @@
     border-radius: 20px 20px 0px 0px!important;
 }
 .ui-button:not(:focus){
-	border-radius: 56px!important;
+    border-radius: 56px;
 }
 .ui-widget.ui-widget-content {
     border: 0!important;
