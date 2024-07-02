@@ -13,7 +13,7 @@ $(function() {
                        text: 'Clear Selection',
                        click: function() {
                            // Clear the selection
-                           $("#mySelectmenu").val('').selectmenu("refresh");
+                           $("#Cat-Select-3").val('').selectmenu("refresh");
                        }
                    }));
 
