@@ -1,30 +1,31 @@
 $(function() {
     
-   $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" },
-            open: function(event, ui) {
-                var selectmenuButton = $(this).selectmenu("widget");
-                var selectmenuMenu = $("#" + selectmenuButton.attr("aria-owns"));
+   $("#Cat-Select-3").selectmenu({
+                icons: { button: "custom-button" },
+                open: function(event, ui) {
+                    var selectmenuButton = $(this).selectmenu("widget");
+                    var selectmenuMenu = $("#" + selectmenuButton.attr("aria-owns"));
 
-                // Check if the clear button already exists
-                if (!selectmenuMenu.find('.clear-selection').length) {
-                    // Create the clear button with an icon
-                    var clearButton = $('<li>', {
-                        class: 'ui-menu-item clear-selection',
-                        role: 'presentation'
-                    }).append($('<div>', {
-                        class: 'ui-menu-item-wrapper',
-                        text: 'Clear Selection',
-                        click: function() {
-                            // Clear the selection
-                            $("#Cat-Select-3").val('').selectmenu("refresh");
-                        }
-                    }));
+                    // Check if the clear button already exists
+                    if (!selectmenuMenu.find('.clear-selection').length) {
+                        // Create the clear button with an icon
+                        var clearButton = $('<li>', {
+                            class: 'ui-menu-item clear-selection',
+                            role: 'presentation'
+                        }).append($('<div>', {
+                            class: 'ui-menu-item-wrapper',
+                            text: 'Clear Selection',
+                            click: function() {
+                                // Clear the selection
+                                $("#Cat-Select-3").val('all').selectmenu("refresh").selectmenu("close");
+                            }
+                        }));
 
-                    // Append the clear button to the menu
-                    selectmenuMenu.append(clearButton);
+                        // Append the clear button to the menu
+                        selectmenuMenu.append(clearButton);
+                    }
                 }
-               }
-            }); 
+            }).selectmenu("menuWidget").addClass("overflow");
 
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
