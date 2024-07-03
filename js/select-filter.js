@@ -14,7 +14,7 @@ $(function() {
                             text: 'Clear Filter',
                             click: function() {
                                 // Clear the selection
-                                $("#Cat-Select-3").val('').selectmenu("refresh").selectmenu("close");
+                                $("#Cat-Select-3").find('option').attr("selected",false);
                                 $("#Cat-Select-2").val('').dispatchEvent(new Event('input', { bubbles: true }));
                                 $("#btn-clr-cat").click();
                             },
