@@ -203,13 +203,13 @@
     display: none;
 }
 
-.ui-selectmenu-menu #btn-clr-cat {
+.ui-selectmenu-menu #btn-clr-cat, .ui-selectmenu-menu #btn-clr-type, .ui-selectmenu-menu #btn-clr-author {
     padding: 8px 15px;
     height: auto!important;
     width: fit-content!important;
 }
 
-.select-wrapper #btn-clr-cat {
+.select-wrapper #btn-clr-cat, .select-wrapper #btn-clr-type, .select-wrapper #btn-clr-author {
     height: 0;
     width: 0;
     overflow: hidden;
