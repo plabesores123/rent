@@ -203,6 +203,12 @@
     display: none;
 }
 
+.ui-selectmenu-menu #btn-clr-cat {
+    display: block;
+}
+
+#btn-clr-cat { display: none }
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
