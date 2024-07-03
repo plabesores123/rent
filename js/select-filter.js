@@ -1,28 +1,28 @@
 $(function() {
     
-   $("#Cat-Select-3").selectmenu({
+   // Initialize SelectMenu using $("#Cat-Select-3")
+            $("#Cat-Select-3").selectmenu({
                 icons: { button: "custom-button" },
                 open: function(event, ui) {
-                    var selectmenuButton = $(this).selectmenu("widget");
-                    var selectmenuMenu = $("#" + selectmenuButton.attr("aria-owns"));
-
                     // Check if the clear button already exists
-                    if (!selectmenuMenu.find('.clear-selection').length) {
+                    if (!$(this).data('clear-button-initialized')) {
+                        var selectmenuMenu = $(this).selectmenu("menuWidget");
+
                         // Create the clear button with an icon
-                        var clearButton = $('<li>', {
-                            class: 'ui-menu-item clear-selection',
-                            role: 'presentation'
-                        }).append($('<div>', {
-                            class: 'ui-menu-item-wrapper',
+                        var clearButton = $('<button>', {
+                            class: 'clear-selection',
                             text: 'Clear Selection',
                             click: function() {
                                 // Clear the selection
                                 $("#Cat-Select-3").val('all').selectmenu("refresh").selectmenu("close");
                             }
-                        }));
+                        });
 
-                        // Append the clear button to the menu
-                        selectmenuMenu.append(clearButton);
+                        // Append the clear button to the menu wrapper
+                        selectmenuMenu.after(clearButton);
+
+                        // Mark the button as initialized
+                        $(this).data('clear-button-initialized', true);
                     }
                 }
             }).selectmenu("menuWidget").addClass("overflow");
