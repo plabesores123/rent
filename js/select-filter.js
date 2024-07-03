@@ -6,7 +6,7 @@ $(function() {
                 position: {
                     my: "left top",
                     at: "left bottom",
-                    of: "#Cat-Select-3",
+                    of: "#Cat-Select-3-button",
                     collision: "flip"
                 },
                 open: function(event, ui) {
