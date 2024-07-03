@@ -14,7 +14,7 @@ $(function() {
                             text: 'Clear Filter',
                             click: function() {
                                 // Clear the selection
-                                $("#Cat-Select-3").find('option').attr("selected",false);
+                                $("#Cat-Select-3").selectmenu("refresh").selectmenu("close");
                                 $("#btn-clr-cat").click();
                             },
                             'href': '#',
