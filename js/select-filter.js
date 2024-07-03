@@ -57,12 +57,12 @@ $(document).ready(function() {
         }).selectmenu("menuWidget").addClass("overflow");
     
         // Event delegation for the clear button
-        $(document)..click(function(e) {
+        $("#clear-cat").click(function(e) {
             e.preventDefault();
             // Clear the selection
             $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
             $("#btn-clr-cat").trigger("click");
-    });
+        });
 
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
