@@ -57,7 +57,7 @@ $(document).ready(function() {
         }).selectmenu("menuWidget").addClass("overflow");
     
         // Event delegation for the clear button
-        $(document).on('click', '#clear-cat', function(e) {
+        $(document)..click(function(e) {
             e.preventDefault();
             // Clear the selection
             $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
