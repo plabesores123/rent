@@ -30,37 +30,42 @@ $(function() {
                     }
                 }
             }).selectmenu("menuWidget").addClass("overflow"); **/
-    $("#Cat-Select-3").selectmenu({
-        icons: { button: "custom-button" },
-        open: function(event, ui) {
-            // Check if the clear button already exists
-            if (!$(this).data('clear-button-initialized')) {
-                var selectmenuMenu = $(this).selectmenu("menuWidget");
-
-                // Create the clear button
-                var clearButton = $('<a>', {
-                    class: 'clear-selection',
-                    text: 'Clear Filter',
-                    href: '#',
-                    'fs-cmsfilter-element': 'reset',
-                    'fs-cmsfilter-reset': 'cat'
-                });
-
-                // Append the clear button to the menu wrapper
-                selectmenuMenu.after(clearButton);
-
-                // Bind click event to the clear button
-                clearButton.on('click', function() {
-                    // Clear the selection
-                    $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
-                    $("#btn-clr-cat").click();
-                });
-
-                // Mark the button as initialized
-                $(this).data('clear-button-initialized', true);
+    $(function() {
+        // Initialize SelectMenu using $("#Cat-Select-3")
+        $("#Cat-Select-3").selectmenu({
+            icons: { button: "custom-button" },
+            open: function(event, ui) {
+                // Check if the clear button already exists
+                if (!$(this).data('clear-button-initialized')) {
+                    var selectmenuMenu = $(this).selectmenu("menuWidget");
+    
+                    // Create the clear button
+                    var clearButton = $('<a>', {
+                        id: 'clear-cat', // Add the id here
+                        class: 'clear-selection',
+                        text: 'Clear Filter',
+                        href: '#',
+                        'fs-cmsfilter-element': 'reset',
+                        'fs-cmsfilter-reset': 'cat'
+                    });
+    
+                    // Append the clear button to the menu wrapper
+                    selectmenuMenu.after(clearButton);
+    
+                    // Mark the button as initialized
+                    $(this).data('clear-button-initialized', true);
+                }
             }
-        }
-    }).selectmenu("menuWidget").addClass("overflow");
+        }).selectmenu("menuWidget").addClass("overflow");
+    
+        // Event delegation for the clear button
+        $(document).on('click', '#clear-cat', function(e) {
+            e.preventDefault();
+            // Clear the selection
+            $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
+            $("#btn-clr-cat").click();
+        });
+    });
 
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
