@@ -165,6 +165,10 @@
     font-size: 16px!important;
 }
 
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
+    margin:0px;
+}
+
 /** .load-more-button:hover .arrow-page-right{
     padding-left: 15px;
     transform: translate(0);
