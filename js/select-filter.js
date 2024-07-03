@@ -31,7 +31,7 @@ $(document).ready(function() {
                 }
             }).selectmenu("menuWidget").addClass("overflow"); **/
         // Initialize SelectMenu using $("#Cat-Select-3")
-        $("#Cat-Select-3").selectmenu({
+         $("#Cat-Select-3").selectmenu({
         icons: { button: "custom-button" },
         open: function (event, ui) {
             if (!$(this).data('clear-button-initialized')) {
@@ -50,6 +50,7 @@ $(document).ready(function() {
                     e.preventDefault();
                     $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
                     $("#btn-clr-cat").trigger("click");
+                    console.log("click triggered");
                 });
 
                 console.log(clearButton);
