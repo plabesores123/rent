@@ -31,7 +31,7 @@ $(function() {
         $typeselect2.val(selectedValue);
         $typeselect2.trigger('change');
         $typeselect2[0].dispatchEvent(new Event('input', { bubbles: true }));
-  
+        $(".ui-button").trigger('blur');
     });
     
     $authorselect.on('selectmenuchange', function() {
@@ -39,6 +39,6 @@ $(function() {
         $authorselect2.val(selectedValue);
         $authorselect2.trigger('change');
         $authorselect2[0].dispatchEvent(new Event('input', { bubbles: true }));
-  
+        $(".ui-button").trigger('blur');
     });
 });
