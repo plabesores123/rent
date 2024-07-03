@@ -139,7 +139,7 @@
 .ui-selectmenu-menu.ui-front.ui-selectmenu-open {
     border-radius: 0px 0px 20px 20px !important;
     background-color: var(--indigo-200) !important;
-    padding-top: 30px;
+    padding-top: 15px;
     font-family: Inter Tight, sans-serif !important;
     font-size: 14px !important;
     font-weight: 600;
