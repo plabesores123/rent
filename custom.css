@@ -204,9 +204,9 @@
 }
 
 .ui-selectmenu-menu #btn-clr-cat {
-    padding: 9px 15px;
-height: auto:
-width: auto;
+    padding: 8px 15px;
+    height: auto!important:
+    width: fit-content!important;
 }
 
 #btn-clr-cat {
