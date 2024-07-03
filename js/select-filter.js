@@ -7,7 +7,6 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-cat').insertAfter(selectmenuMenu);
-            // Mark the button as initialized
             $(this).data('clear-button-initialized', true);
         }
     }
@@ -17,14 +16,34 @@ $(document).ready(function() {
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
     $catselect.unbind('mouseenter mouseleave'); 
-    
-    $("#Type-Select-3").selectmenu({ icons: { button: "custom-button" } }); 
+
+    $("#Type-Select-3").selectmenu({
+    icons: { button: "custom-button" },
+    open: function (event, ui) {
+        if (!$(this).data('clear-button-initialized')) {
+            var selectmenuMenu = $(this).selectmenu("menuWidget");
+            $('#btn-clr-type').insertAfter(selectmenuMenu);
+            $(this).data('clear-button-initialized', true);
+        }
+    }
+    })
+    .selectmenu("menuWidget").addClass("overflow");
     
     $typeselect = $('#Type-Select-3');
     $typeselect2 = $('#Type-Select-2');
     $typeselect.unbind('mouseenter mouseleave'); 
-    
-    $("#Author-Select-2").selectmenu({ icons: { button: "custom-button" } }); 
+ 
+    $("#Author-Select-2").selectmenu({
+    icons: { button: "custom-button" },
+    open: function (event, ui) {
+        if (!$(this).data('clear-button-initialized')) {
+            var selectmenuMenu = $(this).selectmenu("menuWidget");
+            $('#btn-clr-a').insertAfter(selectmenuMenu);
+            $(this).data('clear-button-initialized', true);
+        }
+    }
+    })
+    .selectmenu("menuWidget").addClass("overflow");
      
     $authorselect = $('#Author-Select-2');
     $authorselect2 = $('#Author-Select');
@@ -63,5 +82,25 @@ $(document).ready(function() {
     });
     
     $("#Cat-Select-3 option:first-child").text("All");
+
+    $('#Type-Select-3-button').on('click', function() {
+        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
+    });
+    
+    $('#Type-Select-3-button').on('mousedown', function() {
+        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
+    });
+    
+    $("#Type-Select-3 option:first-child").text("All");
+
+    $('#Author-Select-3-button').on('click', function() {
+        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
+    });
+    
+    $('#Author-Select-3-button').on('mousedown', function() {
+        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
+    });
+    
+    $("#Author-Select-3 option:first-child").text("All");
     
 });
