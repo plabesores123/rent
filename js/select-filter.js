@@ -1,6 +1,6 @@
 $(function() {
     
-    $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" }}); 
+    $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" } }); 
     
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
