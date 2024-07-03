@@ -23,6 +23,7 @@ $(function() {
                     // Append the clear button to the menu
                     selectmenuMenu.append(clearButton);
                 }
+               }
             }); 
 
     $catselect = $('#Cat-Select-3');
