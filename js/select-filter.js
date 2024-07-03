@@ -15,7 +15,8 @@ $(function() {
                             click: function() {
                                 // Clear the selection
                                 $("#Cat-Select-3").val('').selectmenu("refresh").selectmenu("close");
-                            }
+                            },
+                            'fs-cmsfilter-element': 'clear'
                         });
 
                         // Append the clear button to the menu wrapper
