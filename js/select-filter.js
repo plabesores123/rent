@@ -3,6 +3,12 @@ $(function() {
    // Initialize SelectMenu using $("#Cat-Select-3")
             $("#Cat-Select-3").selectmenu({
                 icons: { button: "custom-button" },
+                position: {
+                        my: "left top",  // Position of the dropdown menu relative to the button
+                        at: "left bottom", // Position of the dropdown menu relative to the button
+                        of: "#mySelectMenu", // Element to position against
+                        collision: "flip" // Adjusts the position if dropdown overflows window
+                },                    
                 open: function(event, ui) {
                     // Check if the clear button already exists
                     if (!$(this).data('clear-button-initialized')) {
