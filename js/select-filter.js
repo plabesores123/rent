@@ -17,16 +17,13 @@ $(function() {
     $authorselect = $('#Author-Select-2');
     $authorselect2 = $('#Author-Select');
     $authorselect.unbind('mouseenter mouseleave'); 
-
-    var buttonCat = $catselect;
-    $('<button type="button" class="btn btn-sm btn-light">Clear filter</button>').appendTo(button); 
   
     $catselect.on('selectmenuchange', function() {
         var selectedValue = $catselect.val();
         $catselect2.val(selectedValue);
         $catselect2.trigger('change');
         $catselect2[0].dispatchEvent(new Event('input', { bubbles: true }));
- 
+        $(".ui-button").trigger('blur');
     });
     
     $typeselect.on('selectmenuchange', function() {
