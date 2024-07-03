@@ -118,6 +118,20 @@
     margin-bottom: 10px; 
 }
 
+.clear-selection {
+    display: block;
+    width: calc(100% - 20px);
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
 /** .load-more-button:hover .arrow-page-right{
     padding-left: 15px;
     transform: translate(0);
