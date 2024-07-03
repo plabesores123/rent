@@ -84,7 +84,7 @@
 }
 .ui-menu .ui-menu-item {
     padding: 8px 10px!important;
-    background: var(--indigo-200) !important!important;
+    background: var(--indigo-200) !important;
 }
 .ui-selectmenu-menu .ui-menu {
     overflow: scroll!important;
@@ -154,6 +154,7 @@
     font-family: Inter Tight, sans-serif !important;
     font-size: 14px !important;
     font-weight: 600;
+    margin-top:-20px!important;
 }
 
 #Cat-Select-3-menu.ui-widget, le#Type-Select-3-menu.ui-widget, #Author-Select-3-menu.ui-widget {
