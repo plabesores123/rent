@@ -118,6 +118,35 @@
     margin-bottom: 10px; 
 }
 
+.select-wrapper .ui-selectmenu-button {
+    width: 200px;
+    height: auto;
+    background-color: #E6E6FA;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.select-wrapper .ui-selectmenu-menu {
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.select-wrapper .ui-menu-item {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.select-wrapper .ui-menu-item:hover {
+    background-color: #ddd;
+}
+.select-wrapper .ui-selectmenu-button .ui-selectmenu-text {
+    font-weight: bold;
+}
+.select-wrapper .ui-menu {
+    position: relative;
+    padding-bottom: 60px; /* Add padding to make space for the Clear Selection button */
+}
+
 .clear-selection {
     display: block;
     width: calc(100% - 20px);
