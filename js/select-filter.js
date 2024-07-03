@@ -9,7 +9,7 @@ $(function() {
                         var selectmenuMenu = $(this).selectmenu("menuWidget");
 
                         // Create the clear button with an icon
-                        var clearButton = $('<a>', {
+                        var clearButton = $('<button>', {
                             class: 'clear-selection',
                             text: 'Clear Filter',
                             click: function() {
