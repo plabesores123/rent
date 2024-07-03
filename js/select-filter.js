@@ -30,7 +30,6 @@ $(document).ready(function() {
                     }
                 }
             }).selectmenu("menuWidget").addClass("overflow"); **/
-    $(function() {
         // Initialize SelectMenu using $("#Cat-Select-3")
         $("#Cat-Select-3").selectmenu({
             icons: { button: "custom-button" },
@@ -62,7 +61,10 @@ $(document).ready(function() {
             e.preventDefault();
             // Clear the selection
             $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
-            $("#btn-clr-cat").click();
+            $("#btn-clr-cat").click(function () {
+console.log(“clicked”);
+alert(“clicked”);
+});
         });
     });
 
