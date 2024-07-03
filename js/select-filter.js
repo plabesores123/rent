@@ -9,7 +9,7 @@ $(function() {
                         var selectmenuMenu = $(this).selectmenu("menuWidget");
 
                         // Create the clear button with an icon
-                        var clearButton = $('<button>', {
+                        var clearButton = $('<a>', {
                             class: 'clear-selection',
                             text: 'Clear Filter',
                             click: function() {
@@ -19,6 +19,7 @@ $(function() {
                                 $("#Cat-Select-2").val('').dispatchEvent(new Event('input', { bubbles: true }));
                                 $("#btn-clr-cat").click();
                             },
+                            'href': '#',
                             'fs-cmsfilter-element': 'reset',
                             'fs-cmsfilter-reset': 'cat'
                         });
