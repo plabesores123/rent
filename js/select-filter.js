@@ -1,6 +1,6 @@
 $(function() {
     
-   $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" } },
+   $("#Cat-Select-3").selectmenu({ icons: { button: "custom-button" },
             open: function(event, ui) {
                 var selectmenuButton = $(this).selectmenu("widget");
                 var selectmenuMenu = $("#" + selectmenuButton.attr("aria-owns"));
