@@ -75,6 +75,6 @@ $(function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
     });
     
-    $("#Cat-Select-3 option:first-child").text("All");
+    
     
 });
