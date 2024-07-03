@@ -6,7 +6,7 @@ $(function() {
                 position: {
                         my: "left top",  // Position of the dropdown menu relative to the button
                         at: "left bottom", // Position of the dropdown menu relative to the button
-                        of: "#mySelectMenu", // Element to position against
+                        of: "#Cat-Select-3", // Element to position against
                         collision: "flip" // Adjusts the position if dropdown overflows window
                 },                    
                 open: function(event, ui) {
