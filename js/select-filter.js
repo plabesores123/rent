@@ -38,7 +38,7 @@ $(document).ready(function() {
     open: function (event, ui) {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
-            $('#btn-clr-a').insertAfter(selectmenuMenu);
+            $('#btn-clr-author').insertAfter(selectmenuMenu);
             $(this).data('clear-button-initialized', true);
         }
     }
