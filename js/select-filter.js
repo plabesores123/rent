@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $("#Cat-Select-3").selectmenu({
     icons: { button: "custom-button" },
-    create: function (event, ui) {
+    open: function (event, ui) {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-cat').insertAfter(selectmenuMenu);
