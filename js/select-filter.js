@@ -17,7 +17,8 @@ $(function() {
                                 $("#Cat-Select-3").val('').selectmenu("refresh").selectmenu("close");
                                 $("#Cat-Select-2").val('').selectmenu("refresh").selectmenu("close");
                             },
-                            'fs-cmsfilter-element': 'clear'
+                            'fs-cmsfilter-element': 'reset',
+                            'fs-cmsfilter-reset': 'cat'
                         });
 
                         // Append the clear button to the menu wrapper
