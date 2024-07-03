@@ -62,7 +62,6 @@ $(document).ready(function() {
             // Clear the selection
             $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
             $("#btn-clr-cat").trigger("click");
-        });
     });
 
     $catselect = $('#Cat-Select-3');
