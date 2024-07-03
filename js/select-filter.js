@@ -66,15 +66,5 @@ $(function() {
         $authorselect2[0].dispatchEvent(new Event('input', { bubbles: true }));
         $(".ui-button").trigger('blur');
     });
-
-    $('#Cat-Select-3-button').on('click', function() {
-        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
-    });
-    
-    $('#Cat-Select-3-button').on('mousedown', function() {
-        $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
-    });
-    
-    
     
 });
