@@ -204,10 +204,10 @@
 }
 
 .ui-selectmenu-menu #btn-clr-cat {
-    display: block;
+    
 }
 
-#btn-clr-cat { display: none }
+#btn-clr-cat { } 
 
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
