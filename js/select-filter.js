@@ -11,10 +11,11 @@ $(function() {
                         // Create the clear button with an icon
                         var clearButton = $('<button>', {
                             class: 'clear-selection',
-                            text: 'Clear Selection',
+                            text: 'Clear Filter',
                             click: function() {
                                 // Clear the selection
                                 $("#Cat-Select-3").val('').selectmenu("refresh").selectmenu("close");
+                                $("#Cat-Select-2").val('').selectmenu("refresh").selectmenu("close");
                             },
                             'fs-cmsfilter-element': 'clear'
                         });
