@@ -16,6 +16,7 @@ $(function() {
                                 // Clear the selection
                                 $("#Cat-Select-3").val('').selectmenu("refresh").selectmenu("close");
                                 $("#Cat-Select-2").val('').selectmenu("refresh").selectmenu("close");
+                                $("#Cat-Select-2").val('').dispatchEvent(new Event('input', { bubbles: true }));
                                 $("#btn-clr-cat").click();
                             },
                             'fs-cmsfilter-element': 'reset',
