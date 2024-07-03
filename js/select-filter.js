@@ -40,11 +40,10 @@ $(document).ready(function() {
                     var selectmenuMenu = $(this).selectmenu("menuWidget");
     
                     // Create the clear button
-                    var clearButton = $('<a>', {
+                    var clearButton = $('<button>', {
                         id: 'clear-cat', // Add the id here
                         class: 'clear-selection',
                         text: 'Clear Filter',
-                        href: '#',
                         'fs-cmsfilter-element': 'reset',
                         'fs-cmsfilter-reset': 'cat'
                     });
