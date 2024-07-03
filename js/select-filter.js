@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     
    // Initialize SelectMenu using $("#Cat-Select-3")
            /** $("#Cat-Select-3").selectmenu({
