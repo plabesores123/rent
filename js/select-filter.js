@@ -50,6 +50,7 @@ $(document).ready(function() {
                     e.preventDefault();
                     $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
                     $("#btn-clr-cat").trigger("click");
+                    $("#btn-clr-cat").dispatchEvent(new Event('input', { bubbles: true }));
                     console.log("click triggered");
                 });
 
