@@ -2,13 +2,7 @@ $(function() {
     
    // Initialize SelectMenu using $("#Cat-Select-3")
             $("#Cat-Select-3").selectmenu({
-                icons: { button: "custom-button" },
-                position: {
-                    my: "left top",
-                    at: "left bottom",
-                    of: "#Cat-Select-3",
-                    collision: "flip"
-                },              
+                icons: { button: "custom-button" },          
                 open: function(event, ui) {
                     // Check if the clear button already exists
                     if (!$(this).data('clear-button-initialized')) {
