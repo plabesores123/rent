@@ -29,8 +29,7 @@ $(function() {
                        selectmenuMenu.append(clearButton);
                    }
                }
-           });
-       });
+    });
 
     $catselect = $('#Cat-Select-3');
     $catselect2 = $('#Cat-Select-2');
