@@ -146,6 +146,13 @@
     position: relative;
 }
 
+.ui-selectmenu-menu.ui-front.ui-selectmenu-open {
+    border-radius: 0px 0px 20px 20px !important;
+    background-color: var(--indigo-200) !important;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
 /** .load-more-button:hover .arrow-page-right{
     padding-left: 15px;
     transform: translate(0);
