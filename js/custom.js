@@ -18,13 +18,7 @@ $(document).ready(function() {
     }
     
    // Function to handle the section click event
-    function filterLoseFocus() {
-       $(".select-style").change(function() {
-           $(".ui-button").trigger('blur');
-       });
-    }
 
     removenbsp();
     productsGetStarted();
-    filterLoseFocus();
 });
