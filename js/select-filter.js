@@ -61,10 +61,7 @@ $(document).ready(function() {
             e.preventDefault();
             // Clear the selection
             $("#Cat-Select-3").val(null).selectmenu("refresh").selectmenu("close");
-            $("#btn-clr-cat").click(function () {
-console.log('clicked');
-alert('clicked');
-});
+            $("#btn-clr-cat").trigger("click");
         });
     });
 
