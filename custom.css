@@ -257,4 +257,15 @@ a.ui-button:active,
     .kf-tab-desc .desktop-h3.is-kf{
         font-size: 32px;
     }
+    .global-cta.white.vid-play {
+        background: var(--indigo);
+        color: var(--white);
+    }
+    .global-cta.white.vid-play svg path {
+        fill: var(--indigo);
+    }
+    .global-cta.white.vid-play svg circle {
+        fill: var(--white);
+    }
+
 }
