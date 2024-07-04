@@ -7,6 +7,7 @@ $(document).ready(function() {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-cat').insertAfter(selectmenuMenu);
             $(this).data('clear-button-initialized', true);
+            $(this).val('').selectmenu("refresh").selectmenu("close");
         }
     }
     })
@@ -23,6 +24,7 @@ $(document).ready(function() {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-type').insertAfter(selectmenuMenu);
             $(this).data('clear-button-initialized', true);
+            $(this).val('').selectmenu("refresh").selectmenu("close");
         }
     }
     })
@@ -39,6 +41,7 @@ $(document).ready(function() {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-author').insertAfter(selectmenuMenu);
             $(this).data('clear-button-initialized', true);
+            $(this).val('').selectmenu("refresh").selectmenu("close");
         }
     }
     })
