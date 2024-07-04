@@ -241,3 +241,7 @@
     .kf-tab-desc ._20px-inter-gray {
         font-size: 16px;
     }
+    .kf-tab-desc .desktop-h3 is-kf{
+        font-size: 32px;
+    }
+}
