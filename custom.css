@@ -238,5 +238,6 @@
     .gs-container-subscribe .quick-stack-25 .w-layout-cell:not(:first-child) {
         margin-top: 44px;
     }
-
-}
+    .kf-tab-desc ._20px-inter-gray {
+        font-size: 16px;
+    }
