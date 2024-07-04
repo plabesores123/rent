@@ -6,9 +6,8 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-cat').insertAfter(selectmenuMenu);
-            $(this).val('').selectmenu("refresh").selectmenu("close");
             $("#Cat-Select-3 option:first-child").text("All");
-            $('#Cat-Select-3').data('clear-button-initialized', true);
+            $(this).data('clear-button-initialized', true);
         }
     }
     })
@@ -24,7 +23,6 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-type').insertAfter(selectmenuMenu);
-            $('#Type-Select-3').val('').selectmenu("refresh").selectmenu("close");
             $("#Type-Select-3 option:first-child").text("All");
             $(this).data('clear-button-initialized', true);
         }
@@ -81,6 +79,10 @@ $(document).ready(function() {
     $('#Cat-Select-3-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
     });
+
+    $('#btn-clr-cat').on('click', function() {
+        $('#Cat-Select-3').val('').selectmenu("refresh").selectmenu("close");
+    });
     
     $('#Cat-Select-3-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
@@ -89,6 +91,10 @@ $(document).ready(function() {
     $('#Type-Select-3-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
     });
+
+    $('#btn-clr-type').on('click', function() {
+        $('#Type-Select-3').val('').selectmenu("refresh").selectmenu("close");
+    });
     
     $('#Type-Select-3-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
@@ -96,6 +102,10 @@ $(document).ready(function() {
 
     $('#Author-Select-2-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
+    });
+
+    $('#btn-clr-author').on('click', function() {
+        $('#Author-Select-2').val('').selectmenu("refresh").selectmenu("close");
     });
     
     $('#Author-Select-2-button').on('mousedown', function() {
