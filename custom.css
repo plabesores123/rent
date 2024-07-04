@@ -233,6 +233,12 @@ a.ui-button:active,
     border: 0;
 }
 
+select#Contact_Us_Reason__c {
+    border: 0px solid;
+    border-right-width: 10px !important;
+    border-color: transparent !important;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
