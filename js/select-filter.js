@@ -1,6 +1,5 @@
 $(document).ready(function() {
     
-
     $("#Cat-Select-3").selectmenu({
     icons: { button: "custom-button" },
     open: function (event, ui) {
@@ -93,14 +92,14 @@ $(document).ready(function() {
     
     $("#Type-Select-3 option:first-child").text("All");
 
-    $('#Author-Select-3-button').on('click', function() {
+    $('#Author-Select-2-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
     });
     
-    $('#Author-Select-3-button').on('mousedown', function() {
+    $('#Author-Select-2-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
     });
     
-    $("#Author-Select-3 option:first-child").text("All");
+    $("#Author-Select-2 option:first-child").text("All");
     
 });
