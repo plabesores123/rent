@@ -17,8 +17,19 @@ $(document).ready(function() {
         });
     }
     
-   // Function to handle the section click event
+    function dumpDups() {
+        const rr = new Set();
+        $('.filter-component').each(function() {
+                const text = $(this).text().trim();
+                if (rr.has(text)) {
+                    $(this).remove();
+                } else {
+                    rr.add(text);
+                }
+        });
+    }
 
+    dumpDups();
     removenbsp();
     productsGetStarted();
 });
