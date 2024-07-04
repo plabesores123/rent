@@ -232,4 +232,11 @@
    .ui-selectmenu-button.ui-button {
         width: 100%!important;
    }
+    .gs-container-subscribe .quick-stack-25 {
+        display: block;
+    }
+    .gs-container-subscribe .quick-stack-25 .w-layout-cell:not(:first-child) {
+        margin-top: 44px;
+    }
+
 }
