@@ -6,8 +6,9 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-cat').insertAfter(selectmenuMenu);
-            $(this).data('clear-button-initialized', true);
             $(this).val('').selectmenu("refresh").selectmenu("close");
+            $("#Cat-Select-3 option:first-child").text("All");
+            $('#Cat-Select-3').data('clear-button-initialized', true);
         }
     }
     })
@@ -23,8 +24,9 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-type').insertAfter(selectmenuMenu);
+            $('#Type-Select-3').val('').selectmenu("refresh").selectmenu("close");
+            $("#Type-Select-3 option:first-child").text("All");
             $(this).data('clear-button-initialized', true);
-            $(this).val('').selectmenu("refresh").selectmenu("close");
         }
     }
     })
@@ -40,8 +42,9 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-author').insertAfter(selectmenuMenu);
+            $('#Author-Select-2').val('').selectmenu("refresh").selectmenu("close");
+            $("#Author-Select-2 option:first-child").text("All");
             $(this).data('clear-button-initialized', true);
-            $(this).val('').selectmenu("refresh").selectmenu("close");
         }
     }
     })
@@ -82,8 +85,6 @@ $(document).ready(function() {
     $('#Cat-Select-3-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
     });
-    
-    $("#Cat-Select-3 option:first-child").text("All");
 
     $('#Type-Select-3-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
@@ -92,8 +93,6 @@ $(document).ready(function() {
     $('#Type-Select-3-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
     });
-    
-    $("#Type-Select-3 option:first-child").text("All");
 
     $('#Author-Select-2-button').on('click', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '-20px');
@@ -102,7 +101,5 @@ $(document).ready(function() {
     $('#Author-Select-2-button').on('mousedown', function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css('margin-top', '0px');
     });
-    
-    $("#Author-Select-2 option:first-child").text("All");
     
 });
