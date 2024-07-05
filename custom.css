@@ -159,13 +159,13 @@ a.ui-button:active,
     font-weight: 600;
 }
 
-.ui-selectmenu-menu.ui-front:first-child.ui-selectmenu-open {
+.ui-selectmenu-menu.ui-front:first-child {
     z-index: 9;
 }
-.ui-selectmenu-menu.ui-front:nth-child(2).ui-selectmenu-open {
+.ui-selectmenu-menu.ui-front:nth-child(2) {
     z-index: 7;
 }
-.ui-selectmenu-menu.ui-front:nth-child(3).ui-selectmenu-open {
+.ui-selectmenu-menu.ui-front:nth-child(3) {
     z-index: 5;
 }
 
