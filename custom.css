@@ -247,6 +247,12 @@ select#Contact_Us_Reason__c {
     border:0;
 }
 
+.cta.cta-get-started-form:hover {
+    background-image: url('https://cdn.prod.website-files.com/664bb28e4eaef6676bc7f01a/664bcac6d7096d06c64a8b07_Group%20422.svg');
+    background-position:80%;
+    padding-right:52px;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
