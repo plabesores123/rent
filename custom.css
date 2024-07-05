@@ -281,8 +281,10 @@ select#Contact_Us_Reason__c {
     .global-cta.white.vid-play svg circle {
         fill: var(--white);
     }
+
+}
+@media screen and (max-width: 560px) {
     .vimeo-container.is-home {
         scale: 1;
     }
-
 }
