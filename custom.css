@@ -257,6 +257,10 @@ select#Contact_Us_Reason__c {
     padding-right:62px;
 }
 
+.mktoForm input[type=text] {
+        border:0!important;
+    }
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
@@ -290,10 +294,6 @@ select#Contact_Us_Reason__c {
     }
     .global-cta.white.vid-play svg circle {
         fill: var(--white);
-    }
-
-    .mktoForm input[type=text] {
-        border:0!important;
     }
 
 }
