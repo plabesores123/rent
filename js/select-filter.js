@@ -76,7 +76,7 @@ $(document).ready(function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css({
             'margin-top': '-20px',
             'z-index' : '9'
-            );
+        });
     });
 
     $('#btn-clr-cat').on('click', function() {
@@ -89,7 +89,7 @@ $(document).ready(function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css({
             'margin-top' : '-20px',
             'z-index' : '7'
-            );
+        });
     });
 
     $('#btn-clr-type').on('click', function() {
@@ -102,7 +102,7 @@ $(document).ready(function() {
         $('.ui-selectmenu-menu.ui-front.ui-selectmenu-open').css({
             'margin-top' : '-20px',
             'z-index' : '5'
-            );
+        });
     });
 
     $('#btn-clr-author').on('click', function() {
