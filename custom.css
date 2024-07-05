@@ -254,6 +254,7 @@ select#Contact_Us_Reason__c {
 
 .cta.cta-get-started-form:hover {
     background-image: url('https://cdn.prod.website-files.com/664bb28e4eaef6676bc7f01a/664faa2a8ba0b955ed6066cb_Group%20422.svg');
+    padding-right:62px;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,6 +290,10 @@ select#Contact_Us_Reason__c {
     }
     .global-cta.white.vid-play svg circle {
         fill: var(--white);
+    }
+
+    .mktoForm input[type=text] {
+        border:0!important;
     }
 
 }
