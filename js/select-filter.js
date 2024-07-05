@@ -38,7 +38,6 @@ $(document).ready(function() {
         if (!$(this).data('clear-button-initialized')) {
             var selectmenuMenu = $(this).selectmenu("menuWidget");
             $('#btn-clr-author').insertAfter(selectmenuMenu);
-            $('#Author-Select-2').val('').selectmenu("refresh").selectmenu("close");
             $(this).data('clear-button-initialized', true);
         }
     }
