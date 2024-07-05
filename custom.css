@@ -260,7 +260,25 @@ select#Contact_Us_Reason__c {
 .mktoForm input, .mktoForm select, .mktoForm textarea, .mktoEmailField, .mktoField:focus {
         border:0!important;
     }
-
+.animated-close {;
+    -webkit-animation-duration: 3s;animation-duration: 3s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+ }
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
