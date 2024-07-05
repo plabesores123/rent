@@ -16,6 +16,21 @@ $(document).ready(function() {
             $(".get-started-form-slider").fadeTo(300, 1);
         });
     }
+
+    function GetStartedClose() {
+        $('body').click(function (event) 
+        {
+           if(!$(event.target).closest('.get-started-form-slider').length && !$(event.target).is('.get-started-form-slider')) {
+           
+              $(".get-started-form-slider").css({
+                  "display" : "none",
+                  "opacity" : "0",
+                  "transition" : "transform 0.3s ease-in-out .3s",
+                  "transform" : "translate3d(101vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+              });
+           }
+        });
+    }
     
     function dumpDups() {
         const rr = new Set();
@@ -29,6 +44,7 @@ $(document).ready(function() {
         });
     }
 
+    GetStartedClose();
     dumpDups();
     removenbsp();
     productsGetStarted();
