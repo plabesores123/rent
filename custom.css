@@ -257,7 +257,7 @@ select#Contact_Us_Reason__c {
     padding-right:62px;
 }
 
-.mktoForm input, .mktoForm select, .mktoForm textarea, .mktoEmailField {
+.mktoForm input, .mktoForm select, .mktoForm textarea, .mktoEmailField, .mktoField:focus {
         border:0!important;
     }
 
