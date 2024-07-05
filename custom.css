@@ -160,13 +160,13 @@ a.ui-button:active,
 }
 
 .ui-selectmenu-menu.ui-front:first-child {
-    z-index: 9;
+    z-index: 9!important;
 }
 .ui-selectmenu-menu.ui-front:nth-child(2) {
-    z-index: 7;
+    z-index: 7!important;
 }
 .ui-selectmenu-menu.ui-front:nth-child(3) {
-    z-index: 5;
+    z-index: 5!important;
 }
 
 #Cat-Select-3-menu.ui-widget, #Type-Select-3-menu.ui-widget, #Author-Select-2-menu.ui-widget {
