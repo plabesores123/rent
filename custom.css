@@ -251,10 +251,14 @@ a.ui-button:active,
 }
 
 select#Contact_Us_Reason__c {
-    border: 0px solid;
-    border-right-width: 10px !important;
-    border-color: transparent !important;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(https://plabesores123.github.io/rent/images/down-arrow.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
 }
+
 
 .cta.gs-cta.res-card-link.sol-card-link{
     background-image: url('https://cdn.prod.website-files.com/664bb28e4eaef6676bc7f01a/668815f2dea2d0501f24fc6e_arrow-right-indigo-400-dark-bg.svg');
