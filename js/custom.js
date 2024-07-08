@@ -34,7 +34,7 @@ $(document).ready(function() {
     }
     function TeamModalClose() {
         $('.t-modal-close').click(function (event) {
-            $(".t-modal-overlay").fadOut(fast).delay(700);
+            $(".t-modal-overlay").fadOut(fast);
         });
     }
     
