@@ -279,7 +279,13 @@ select#Contact_Us_Reason__c {
 
 .mktoForm input, .mktoForm select, .mktoForm textarea, .mktoEmailField, .mktoField:focus {
         border:0!important;
-    }
+}
+
+.all-sol-items:hover > .cta {
+    padding-right: 50px;
+    transform: translate(0);
+}
+
 .animated-close {;
     -webkit-animation-duration: 3s;animation-duration: 3s;
     -webkit-animation-fill-mode: both;animation-fill-mode: both;
