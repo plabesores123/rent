@@ -32,6 +32,11 @@ $(document).ready(function() {
            }
         });
     }
+    function TeamModalClose() {
+        $('.t-modal-close').click(function (event) {
+            $(".t-modal-overlay").fadOut(fast).delay(2000);
+        });
+    }
     
     function dumpDups() {
         const rr = new Set();
