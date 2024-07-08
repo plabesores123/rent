@@ -281,7 +281,7 @@ select#Contact_Us_Reason__c {
         border:0!important;
 }
 
-.all-sol-items .w-layout-cell:hover .cta {
+.all-sol-items .w-layout-cell:hover .cta, .three-cards .related-cells:hover .cta {
     padding-right: 50px;
     transform: translate(0);
 }
