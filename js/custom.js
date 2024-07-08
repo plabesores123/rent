@@ -49,7 +49,7 @@ $(document).ready(function() {
                 }
         });
     }
-
+    TeamModalClose();
     GetStartedClose();
     dumpDups();
     removenbsp();
