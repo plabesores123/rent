@@ -277,6 +277,11 @@ select#Contact_Us_Reason__c {
     background-image: url('https://cdn.prod.website-files.com/664bb28e4eaef6676bc7f01a/664faa2a8ba0b955ed6066cb_Group%20422.svg');
 }
 
+.all-sol-items:hover .w-layout-cell .about-desc-card-container .cta.gs-cta.res-card-link {
+    padding-right: 50px;
+    transform: translate(0);
+}
+
 .mktoForm input, .mktoForm select, .mktoForm textarea, .mktoEmailField, .mktoField:focus {
         border:0!important;
     }
