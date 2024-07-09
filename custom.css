@@ -295,7 +295,7 @@ select#Contact_Us_Reason__c {
     transform: translate(0);
 }
 
-.animated-close {;
+.animated-close {
     -webkit-animation-duration: 3s;animation-duration: 3s;
     -webkit-animation-fill-mode: both;animation-fill-mode: both;
  }
