@@ -51,8 +51,8 @@ $(document).ready(function() {
         });
     }
     TeamModalClose();
-    GetStartedClose();
+    //GetStartedClose();
     dumpDups();
     removenbsp();
-    productsGetStarted();
+    //productsGetStarted();
 });
