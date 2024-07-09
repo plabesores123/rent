@@ -348,8 +348,16 @@ select#Contact_Us_Reason__c {
     .global-cta.white.vid-play svg circle {
         fill: var(--white);
     }
+    .owl-nav-none .owl-nav {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .owl-nav-none .owl-dots {
+        width:100%;
+    }
 
-}
+}                                
 @media screen and (max-width: 560px) {
     .vimeo-container.is-home {
         scale: 1;
