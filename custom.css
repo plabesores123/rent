@@ -234,6 +234,10 @@ a.ui-button:active,
     display: none;
 }
 
+.owl-nav-none .owl-dots {
+    width:100%;
+}
+
 #is-related .collection-list-resource:not(:nth-child(-n+3)) {
     display: none;
 }
