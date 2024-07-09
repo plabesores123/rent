@@ -229,6 +229,11 @@ a.ui-button:active,
     padding-bottom: 32px;
 }
 
+.owl-nav-none .owl-nav {
+    visibility: hidden;
+    display: none;
+}
+
 #is-related .collection-list-resource:not(:nth-child(-n+3)) {
     display: none;
 }
