@@ -26,17 +26,33 @@ $(document).ready(function() {
             // Add the "cta-blog-post" class to these links
             $links.addClass("cta-blog-post");
     
+            // Replace the href attribute with "#"
+            $links.attr("href", "#");
+    
             // Set up the click handler
-            $(".cta-blog-post").click(function() {
-                event.preventDefault();
-                $(".get-started-form-slider").css({
-                    "display": "block",
-                    "opacity": "0",
-                    "transition": "transform 0.3s ease-in-out .3s",
-                    "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                });
-                $(".get-started-form-slider").show().fadeIn('fast');
+            $(".cta-blog-post").click(function(event) {
+                event.preventDefault(); // Prevent the default action
+    
+                console.log("Link clicked!"); // Debugging statement
+    
+                // Check if the slider element exists
+                var $slider = $(".get-started-form-slider");
+                if ($slider.length > 0) {
+                    console.log("Slider found!"); // Debugging statement
+                    
+                    $slider.css({
+                        "display": "block",
+                        "opacity": "0",
+                        "transition": "transform 0.3s ease-in-out .3s",
+                        "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                    });
+                    $slider.show().fadeIn('fast');
+                } else {
+                    console.log("Slider not found!"); // Debugging statement
+                }
             });
+        } else {
+            console.log("No matching links found!"); // Debugging statement
         }
     }
 
