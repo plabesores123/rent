@@ -38,16 +38,25 @@ $(document).ready(function() {
                 // Check if the slider element exists
                 var $slider = $(".get-started-form-slider");
                 if ($slider.length > 0) {
+                    // Animate entrance
                     $slider.css({
-                        "display": "block",
-                        "transform": "translate3d(0px, 0px, 0px)",
-                        "opacity": "1",
+                        "transform": "translate3d(101vw, 0px, 0px)",
+                        "opacity": "0",
                         "transition": "transform 0.3s ease-in-out, opacity 0.3s ease-in-out"
-                    }).fadeIn('fast');
+                    });
+    
+                    // Show and fade in
+                    setTimeout(function() {
+                        $slider.css({
+                            "transform": "translate3d(0px, 0px, 0px)",
+                            "opacity": "1"
+                        }).fadeIn('fast');
+                    }, 50); // Delay to ensure CSS transition applies correctly
                 }
             });
         }
     }
+
 
     function GetStartedClose() {
         $('body').click(function(event) {
