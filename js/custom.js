@@ -63,8 +63,7 @@ $(document).ready(function() {
 
     function textCMSDecode() {
         $(document).ready(function () {
-           // targeting class of .podcast-embed
-           $(".faq-collection").each(function () {
+           $(".faq-answer").each(function () {
                $(this).html(he.decode($(this).html())); // decode the text
            });
         });
