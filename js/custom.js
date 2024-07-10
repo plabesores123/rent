@@ -18,16 +18,27 @@ $(document).ready(function() {
         });
     }
     function BlogsGetStartedLink() {
-        $( ".blog-content a[href='^/get-started/'" ).click(function() {
-            $(".get-started-form-slider").css({
-            "display" : "block",
-            "opacity" : "0",
-            "transition" : "transform 0.3s ease-in-out .3s",
-            "transform" : "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+        // Select all links with href starting with "/get-started/" within .blog-content
+        var $links = $(".blog-content a[href^='/get-started/']");
+        
+        // Check if any such links exist
+        if ($links.length > 0) {
+            // Add the "cta-blog-post" class to these links
+            $links.addClass("cta-blog-post");
+    
+            // Set up the click handler
+            $(".cta-blog-post").click(function() {
+                $(".get-started-form-slider").css({
+                    "display": "block",
+                    "opacity": "0",
+                    "transition": "transform 0.3s ease-in-out .3s",
+                    "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+                });
+                $(".get-started-form-slider").show().fadeIn('fast');
             });
-            $(".get-started-form-slider").show().fadeIn('fast');
-        });
+        }
     }
+
     
 
     function GetStartedClose() {
