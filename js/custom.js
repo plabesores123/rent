@@ -61,7 +61,7 @@ $(document).ready(function() {
         });
     }
 
-    function textCMSDecode {
+    function textCMSDecode() {
         $(document).ready(function () {
            // targeting class of .podcast-embed
            $("#custom-cms-text").each(function () {
