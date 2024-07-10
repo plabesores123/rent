@@ -28,6 +28,7 @@ $(document).ready(function() {
     
             // Set up the click handler
             $(".cta-blog-post").click(function() {
+                event.preventDefault();
                 $(".get-started-form-slider").css({
                     "display": "block",
                     "opacity": "0",
