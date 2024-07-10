@@ -35,17 +35,26 @@ $(document).ready(function() {
                 event.preventDefault(); // Prevent the default action
                 event.stopPropagation(); // Stop the event from propagating to the body
     
+                console.log("Link clicked!"); // Debugging statement
+    
                 // Check if the slider element exists
                 var $slider = $(".get-started-form-slider");
                 if ($slider.length > 0) {
+                    console.log("Slider found!"); // Debugging statement
+                    
                     $slider.css({
                         "display": "block",
                         "opacity": "0",
                         "transition": "transform 0.3s ease-in-out .3s",
                         "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                    }).show().fadeIn('fast');
+                    });
+                    $slider.show().fadeIn('fast');
+                } else {
+                    console.log("Slider not found!"); // Debugging statement
                 }
             });
+        } else {
+            console.log("No matching links found!"); // Debugging statement
         }
     }
 
