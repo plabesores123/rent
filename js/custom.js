@@ -38,25 +38,16 @@ $(document).ready(function() {
                 // Check if the slider element exists
                 var $slider = $(".get-started-form-slider");
                 if ($slider.length > 0) {
-                    // Animate entrance
                     $slider.css({
-                        "transform": "translate3d(101vw, 0px, 0px)",
-                        "opacity": "0",
+                        "display": "block",
+                        "transform": "translate3d(0px, 0px, 0px)",
+                        "opacity": "1",
                         "transition": "transform 0.3s ease-in-out, opacity 0.3s ease-in-out"
-                    });
-    
-                    // Show and fade in
-                    setTimeout(function() {
-                        $slider.css({
-                            "transform": "translate3d(0px, 0px, 0px)",
-                            "opacity": "1"
-                        }).fadeIn('fast');
-                    }, 50); // Delay to ensure CSS transition applies correctly
+                    }).fadeIn('fast');
                 }
             });
         }
     }
-
 
     function GetStartedClose() {
         $('body').click(function(event) {
