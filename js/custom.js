@@ -60,12 +60,8 @@ $(document).ready(function() {
 
     function GetStartedClose() {
         $('body').click(function(event) {
-            // Check if the click is outside the slider, the link, and the close-wrapper
-            if (!$(event.target).closest('.get-started-form-slider').length && 
-                !$(event.target).is('.get-started-form-slider') && 
-                !$(event.target).is('.cta-blog-post') && 
-                !$(event.target).closest('.close-wrapper').length) {
-                    
+            // Check if the click is outside the slider and the link
+            if (!$(event.target).closest('.get-started-form-slider').length && !$(event.target).is('.get-started-form-slider') && !$(event.target).is('.cta-blog-post')) {
                 $(".get-started-form-slider").css({
                     "display": "none",
                     "opacity": "0",
