@@ -53,7 +53,7 @@ $(document).ready(function() {
     function FAQCTA() {
         $( document ).ready(function() {   
             // Component 
-            $("div:contains([cta-button-white])").load('https://redfin-group.webflow.io/ [cms-component=cta-button-contact-me]');
+            $("p:contains([cta-button-white])").load('https://redfin-group.webflow.io/ [cms-component=cta-button-contact-me]');
             // Last component with function to show the body once all components have been loaded in - make sure this is the last component in this list
             //$("p:contains([cta-2-section])").load('https://rmcn-tutorials.webflow.io/symbols [symbol=contact-me]', function() {
                // $('body').css('display','block');
