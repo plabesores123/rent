@@ -61,6 +61,17 @@ $(document).ready(function() {
         });
     }
 
+    function textCMSDecode {
+        $(document).ready(function () {
+           // targeting class of .podcast-embed
+           $("#custom-cms-text").each(function () {
+               $(this).hide(); // hide so code is not displayed (better to hide in CSS)
+               $(this).html(he.decode($(this).html())); // decode the text
+               $(this).show(); // show the decoded element
+           });
+        });
+    }
+
     FAQCTA();
     TeamModalClose();
     GetStartedClose();
