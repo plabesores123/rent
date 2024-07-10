@@ -65,9 +65,7 @@ $(document).ready(function() {
         $(document).ready(function () {
            // targeting class of .podcast-embed
            $(".faq-collection").each(function () {
-               $(this).hide(); // hide so code is not displayed (better to hide in CSS)
                $(this).html(he.decode($(this).html())); // decode the text
-               $(this).show(); // show the decoded element
            });
         });
     }
