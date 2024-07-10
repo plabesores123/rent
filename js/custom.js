@@ -51,12 +51,13 @@ $(document).ready(function() {
 
     function GetStartedClose() {
         $('body').click(function(event) {
-            // Check if the click is outside the slider, the link, and the close-wrapper
-            if (!$(event.target).closest('.get-started-form-slider').length && 
-                !$(event.target).is('.get-started-form-slider') && 
-                !$(event.target).is('.cta-blog-post') && 
-                !$(event.target).closest('.close-wrapper').length) {
-                    
+            // Check if the click is outside the slider and not on exceptions
+            if (!$(event.target).closest('.get-started-form-slider').length &&
+                !$(event.target).is('.get-started-form-slider') &&
+                !$(event.target).closest('.close-wrapper').length &&
+                !$(event.target).is('a') &&  // exception for all <a> tags
+                !$(event.target).closest('.lp-cta').length) {  // exception for .lp-cta class
+                
                 $(".get-started-form-slider").css({
                     "transform": "translate3d(101vw, 0px, 0px)",
                     "opacity": "0",
