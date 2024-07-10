@@ -17,6 +17,7 @@ $(document).ready(function() {
             $(".get-started-form-slider").show().fadeIn('fast');
         });
     }
+    
     function BlogsGetStartedLink() {
         // Select all links with href starting with "/get-started/" within .blog-content
         var $links = $(".blog-content a[href^='/get-started/']");
@@ -32,36 +33,30 @@ $(document).ready(function() {
             // Set up the click handler
             $(".cta-blog-post").click(function(event) {
                 event.preventDefault(); // Prevent the default action
-    
-                console.log("Link clicked!"); // Debugging statement
+                event.stopPropagation(); // Stop the event from propagating to the body
     
                 // Check if the slider element exists
                 var $slider = $(".get-started-form-slider");
                 if ($slider.length > 0) {
-                    console.log("Slider found!"); // Debugging statement
-                    
                     $slider.css({
                         "display": "block",
-                        "opacity": "1",
+                        "opacity": "0",
                         "transition": "transform 0.3s ease-in-out .3s",
                         "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-                    });
-                    $slider.show().fadeIn('fast');
-                } else {
-                    console.log("Slider not found!"); // Debugging statement
+                    }).show().fadeIn('fast');
                 }
             });
-        } else {
-            console.log("No matching links found!"); // Debugging statement
         }
     }
 
-    
-
     function GetStartedClose() {
         $('body').click(function(event) {
-            // Check if the click is outside the slider and the link
-            if (!$(event.target).closest('.get-started-form-slider').length && !$(event.target).is('.get-started-form-slider') && !$(event.target).is('.cta-blog-post')) {
+            // Check if the click is outside the slider, the link, and the close-wrapper
+            if (!$(event.target).closest('.get-started-form-slider').length && 
+                !$(event.target).is('.get-started-form-slider') && 
+                !$(event.target).is('.cta-blog-post') && 
+                !$(event.target).closest('.close-wrapper').length) {
+                    
                 $(".get-started-form-slider").css({
                     "display": "none",
                     "opacity": "0",
@@ -72,7 +67,6 @@ $(document).ready(function() {
             }
         });
     }
-
 
     function TeamModalClose() {
         $('.t-modal-close').click(function (event) {
