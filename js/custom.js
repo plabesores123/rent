@@ -42,7 +42,7 @@ $(document).ready(function() {
                     
                     $slider.css({
                         "display": "block",
-                        "opacity": "0",
+                        "opacity": "1",
                         "transition": "transform 0.3s ease-in-out .3s",
                         "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
                     });
