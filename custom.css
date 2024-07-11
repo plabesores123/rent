@@ -268,11 +268,6 @@ select#Contact_Us_Reason__c {
     background-position: calc(100% - 16px) center;
 }
 
-
-.cta.gs-cta.res-card-link.sol-card-link{
-    background-image: url('https://cdn.prod.website-files.com/664bb28e4eaef6676bc7f01a/668815f2dea2d0501f24fc6e_arrow-right-indigo-400-dark-bg.svg');
-}
-
 .w-input, .w-select {
     border:0;
 }
