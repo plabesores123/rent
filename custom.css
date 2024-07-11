@@ -229,6 +229,10 @@ a.ui-button:active,
     padding-bottom: 32px;
 }
 
+.blog-details code.indigo-highlight.gs-light {
+    font-family: Rentsans, sans-serif;
+}
+
 .owl-nav-none .owl-nav {
     visibility: hidden;
     display: none;
