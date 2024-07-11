@@ -4,22 +4,33 @@
     appearance: none;
     background-color: var(--indigo-200)!important;
 }
+
 .lp-arrow.t-bg:hover svg{
     fill: #4561ec;
 }
+
 .lp-arrow.t-bg:hover svg circle, .lp-arrow.t-bg:hover svg path {
     stroke: #000!important;
 }
+
+.lp-feat svg path {
+    stroke: var(--indigo-500);
+    stroke-width: 3;
+}
+
 .line-white.indigo-light-bg {
     opacity: 1;
     visibility: visible;
 }
+
 .gs-container.cta-block {
     visibility: visible;
 }
+
 .ar-carousel.is-guide .ar-items {
     margin-bottom: 10px;
 }
+
 .ar-collection:after {
     position: absolute;
     bottom: -1px;
