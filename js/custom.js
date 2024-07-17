@@ -108,7 +108,7 @@ $(document).ready(function() {
     textCMSDecode();
     FAQCTA();
     TeamModalClose();
-    GetStartedClose();
+    //GetStartedClose();
     dumpDups();
     removenbsp();
     //productsGetStarted();
