@@ -314,6 +314,10 @@ select#Contact_Us_Reason__c {
     0% {opacity: 1;}
     100% {opacity: 0;}
  }
+
+.hidden-dots .owl-dots{
+    display:none;
+}
  
  @keyframes fadeOut {
     0% {opacity: 1;}
