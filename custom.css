@@ -324,6 +324,11 @@ select#Contact_Us_Reason__c {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
  }
+
+.w-lightbox-img {
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
