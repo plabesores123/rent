@@ -333,6 +333,16 @@ select#Contact_Us_Reason__c {
     border-radius: 4px;
 }
 
+.resources.large-arrows .owl-nav button:hover {
+    -webkit-transform: scale(1.1) translateY(-50%) !important;
+    transform: scale(1.1) translateY(-50%) !important;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
