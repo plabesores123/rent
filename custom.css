@@ -397,6 +397,12 @@ select#Contact_Us_Reason__c {
         margin-bottom: 40px;
         padding-bottom: 20px;
     }
+    .templates-carousel .owl-prev {
+        left: 15px;
+    }
+    .templates-carousel .owl-next {
+        right: 15px;
+    }
 
 }                                
 @media screen and (max-width: 560px) {
