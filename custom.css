@@ -347,6 +347,10 @@ select#Contact_Us_Reason__c {
     background: #7e93fb;
 }
 
+button.owl-dot:last-child {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
