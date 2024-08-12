@@ -343,6 +343,10 @@ select#Contact_Us_Reason__c {
     transform-origin: center;
 }
 
+.ar-items .owl-dot.active{
+    background: #7e93fb;
+}
+
 @media screen and (max-width: 767px) {
     .contact-form-wrap {
         position: relative;
