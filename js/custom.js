@@ -112,4 +112,14 @@ $(document).ready(function() {
     dumpDups();
     removenbsp();
     //productsGetStarted();
+
+    $(".templates-carousel").owlCarousel({
+          items: 3,
+          loop: true,
+          margin: 10,
+          center: true,
+          nav: true,
+          navText: ["", ""],
+          autoWidth: false
+    });
 });
