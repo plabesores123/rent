@@ -402,6 +402,7 @@ select#Contact_Us_Reason__c {
     }
     .templates-carousel .owl-next {
         right: 15px;
+        max-width: 90%;
     }
 
 }                                
