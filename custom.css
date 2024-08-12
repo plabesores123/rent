@@ -389,6 +389,14 @@ select#Contact_Us_Reason__c {
     .owl-nav-none .owl-dots {
         width:100%;
     }
+    .templates-carousel .owl-prev, .templates-carousel .owl-next {
+        top: 100% !important;
+        transform: translateY(-100%) !important;
+    }
+    .templates-carousel .tmpl-content {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
 
 }                                
 @media screen and (max-width: 560px) {
