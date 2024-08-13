@@ -347,8 +347,12 @@ select#Contact_Us_Reason__c {
     background: #7e93fb;
 }
 
-button.owl-dot:last-child {
+#ar-no-space .ar-items button.owl-dot:last-child {
     display: none;
+}
+#ar-no-space .owl-next.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 767px) {
