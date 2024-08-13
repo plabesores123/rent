@@ -116,12 +116,11 @@ $(document).ready(function() {
     $('.ar-carousels').owlCarousel({
         // Your Owl Carousel options here
     }).on('changed.owl.carousel', function(event) {
-        var totalItems = event.item.count; // Total number of items
-        var currentIndex = event.item.index; // Current index (start from 0)
-        var visibleItems = event.page.size; // Number of visible items
+        var totalDots = event.page.count; // Total number of dots (pages)
+        var currentDotIndex = event.page.index; // Index of the active dot
     
-        // Check if it's on the second-to-last dot
-        if (currentIndex + visibleItems >= totalItems - 1) {
+        // Check if the second-to-last dot is active
+        if (currentDotIndex === totalDots - 2) {
             $('.owl-next').addClass('disabled'); // Disable "Next" button
         } else {
             $('.owl-next').removeClass('disabled'); // Enable "Next" button
