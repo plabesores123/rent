@@ -114,7 +114,7 @@ $(document).ready(function() {
     //productsGetStarted();
 
     $(".templates-carousel").owlCarousel({
-          items: 3,
+          items: 4,
           loop: true,
           margin: 10,
           center: true,
