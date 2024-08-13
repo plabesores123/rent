@@ -112,14 +112,19 @@ $(document).ready(function() {
     dumpDups();
     removenbsp();
     //productsGetStarted();
-
-    $(".templates-carousel").owlCarousel({
-          items: 4,
-          loop: true,
-          margin: 10,
-          center: true,
-          nav: true,
-          navText: ["", ""],
-          autoWidth: false
+    
+    $('.templates-carousel').owlCarousel({
+        // Your Owl Carousel options here
+    }).on('changed.owl.carousel', function(event) {
+        var totalItems = event.item.count; // Total number of items
+        var currentIndex = event.item.index; // Current index (start from 0)
+        var visibleItems = event.page.size; // Number of visible items
+    
+        // Check if it's on the second-to-last dot
+        if (currentIndex + visibleItems >= totalItems - 1) {
+            $('.owl-next').addClass('disabled'); // Disable "Next" button
+        } else {
+            $('.owl-next').removeClass('disabled'); // Enable "Next" button
+        }
     });
 });
