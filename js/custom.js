@@ -113,7 +113,7 @@ $(document).ready(function() {
     removenbsp();
     //productsGetStarted();
     
-    $('.templates-carousel').owlCarousel({
+    $('.ar-carousels').owlCarousel({
         // Your Owl Carousel options here
     }).on('changed.owl.carousel', function(event) {
         var totalItems = event.item.count; // Total number of items
