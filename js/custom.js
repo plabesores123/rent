@@ -113,7 +113,7 @@ $(document).ready(function() {
     removenbsp();
     //productsGetStarted();
     
-    $('.ar-carousels').owlCarousel({
+    $('#ar-no-space').owlCarousel({
         // Your Owl Carousel options here
     }).on('changed.owl.carousel', function(event) {
         var totalDots = event.page.count; // Total number of dots (pages)
