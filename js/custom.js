@@ -113,7 +113,7 @@ $(document).ready(function() {
     removenbsp();
     //productsGetStarted();
     
-    $('#ar-no-space').owlCarousel({
+    /**$('#ar-no-space').owlCarousel({
         // Your Owl Carousel options here
     }).on('changed.owl.carousel', function(event) {
         var totalDots = event.page.count; // Total number of dots (pages)
@@ -125,5 +125,5 @@ $(document).ready(function() {
         } else {
             $('.owl-next').removeClass('disabled'); // Enable "Next" button
         }
-    });
+    });**/
 });
